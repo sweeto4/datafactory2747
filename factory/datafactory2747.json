@@ -1,0 +1,9 @@
+{
+	"name": "datafactory2747",
+	"location": "polandcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cc2da298-c680-49d9-8770-940cfcad8e5a",
+		"tenantId": "f77bbb5a-b3ad-4de1-8394-254f3305613f"
+	}
+}
