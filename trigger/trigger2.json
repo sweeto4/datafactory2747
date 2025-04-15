@@ -7,6 +7,10 @@
 			"pipelineReference": {
 				"referenceName": "pipeline1",
 				"type": "PipelineReference"
+			},
+			"parameters": {
+				"StartingTime": "=trigger().StartDate",
+				"EndTime": "=trigger().EndTime"
 			}
 		},
 		"type": "TumblingWindowTrigger",
