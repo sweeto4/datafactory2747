@@ -34,6 +34,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"StartingTime": {
+				"type": "string"
+			},
+			"EndTime": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-09-19T12:16:14Z"
 	},
