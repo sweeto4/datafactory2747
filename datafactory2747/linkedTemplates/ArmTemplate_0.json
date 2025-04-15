@@ -713,7 +713,8 @@
 						"     allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     isolationLevel: 'READ_UNCOMMITTED',",
-						"     format: 'table') ~> salesOrdrerHeader",
+						"     query: 'select * from  AzureSqlTable1 where OrderDate > ',",
+						"     format: 'query') ~> salesOrdrerHeader",
 						"source(output(",
 						"          SalesOrderID as integer,",
 						"          SalesOrderDetailID as integer,",
@@ -845,6 +846,14 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"StartingTime": {
+						"type": "string"
+					},
+					"EndTime": {
+						"type": "string"
+					}
 				},
 				"annotations": [],
 				"lastPublishTime": "2024-09-19T12:16:14Z"
