@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "datafactory2747"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
+		"datadb_connectionString": {
+			"value": ""
+		},
+		"datalake2747_accountKey": {
+			"value": ""
+		},
+		"synapsesvitlana_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://datalake2747.dfs.core.windows.net/"
+		},
+		"datalake2747_properties_typeProperties_url": {
+			"value": "https://datalake2747.dfs.core.windows.net/"
+		},
+		"ls_api_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		}
+	}
+}
