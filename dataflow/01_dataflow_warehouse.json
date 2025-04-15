@@ -38,6 +38,11 @@
 				}
 			],
 			"scriptLines": [
+				"parameters{",
+				"     parameter1 as string,",
+				"     StartDate as date,",
+				"     EndDate as date",
+				"}",
 				"source(output(",
 				"          SalesOrderID as integer,",
 				"          RevisionNumber as integer,",
@@ -65,7 +70,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
-				"     format: 'table') ~> salesOrdrerHeader",
+				"     query: (select * from  AzureSqlTable1 where OrderDate >=$StartDate\\r\\nand OrderDate <$EndDate),",
+				"     format: 'query') ~> salesOrdrerHeader",
 				"source(output(",
 				"          SalesOrderID as integer,",
 				"          SalesOrderDetailID as integer,",
